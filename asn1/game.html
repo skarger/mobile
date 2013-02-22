@@ -3,11 +3,19 @@
 <head>
 <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" /> 
 <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css" />
-<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="assets/stylesheets/small-device.css" />
-
-
+<link rel="stylesheet" type="te xt/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="assets/stylesheets/small-device.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<script type="text/javascript" src="assets/javascripts/main.js"></script>
 </head>
-<body>
-Game
+<body onload="startup()">
+<div id="accel"></div>
+<div id="ball"></div>
+<div id="dbc">
+	<span id="db1"></span>
+	<span id="db2"></span>
+	<span id="db3"></span>
+	<span id="db4"></span>
+	<span id="db5"></span>
+</div>
 </body>
 </html>
