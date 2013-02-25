@@ -2,12 +2,13 @@
 
 body {
 	background-color:#ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-
-
-
-.button {
+.button, .message, #heading, #playpause {
     background: #ff0000;
 	border-radius: 10%;	
     color: #FFFFFF;
@@ -19,8 +20,59 @@ body {
     text-decoration: none;
 }
 
-div#ball {
-	width:60px;height:60px;
-	border-radius:30px;
-	background:#000
+.title {
+	position: absolute;
+    top: 45%;
+    left: 33%;
 }
+
+.message {
+	display: none;
+}
+
+div#ball {
+	width:30px;height:30px;
+	border-radius:15px;
+	background:#606060;
+}
+
+div#goal {
+	width:36px;height:36px;
+	border-radius:18px;
+	background:#000;
+    position: fixed;
+    right: 0;
+	z-index:-1;
+}
+
+
+/* for obstacles - unused */
+div#container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div.wood {
+	background: #8B4513;
+	height:20%;
+}
+
+div.gap {
+	width: 100%;
+	height: 20px;
+}
+
+div#w1 {
+	width: 40%;
+}
+
+div#w2 {
+	width: 80%;
+}
+
+div#w3 {
+	width: 80%;
+}
+
